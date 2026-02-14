@@ -9,6 +9,7 @@ import Link from "next/link";
 import CategoryPieChart from "@/components/category-pie-chart";
 import BalanceBarChart from "@/components/balance-bar-chart";
 import ExpenseTimeline from "@/components/expense-timeline";
+import { StatsProvider } from "@/lib/stats-context";
 
 // Define types for our stats API
 interface Balance {
@@ -29,7 +30,7 @@ interface Stats {
   categoryBreakdown: CategoryStat[];
 }
 
-export default function ReportsPage() {
+function ReportsPageContent() {
   const [stats, setStats] = useState<Stats | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -159,5 +160,13 @@ export default function ReportsPage() {
         </Card>
       </div>
     </div>
+  );
+}
+
+export default function ReportsPage() {
+  return (
+    <StatsProvider>
+      <ReportsPageContent />
+    </StatsProvider>
   );
 }
