@@ -4,6 +4,9 @@ A simple, self-hosted expense tracking application built specifically for roomma
 
 > I built this for personal-use, feel free to fork & customize to suit yourself.
 
+<img width="1566" height="862" alt="image" src="https://github.com/user-attachments/assets/92d0ee4d-e980-4228-b330-bf3942ffc531" />
+<img width="1560" height="897" alt="image" src="https://github.com/user-attachments/assets/35bb12ba-06ca-4926-b0a6-11d1704f02d5" />
+
 ## ✨ Features
 
 - **Multi-User Support** - Configurable for any number of roommates
