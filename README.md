@@ -37,8 +37,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
-cd buddha
+git clone https://github.com/FireHead90544/Chirkut
+cd Chirkut
 ```
 
 ### 2. Install Dependencies
@@ -174,9 +174,7 @@ Navigate to the "Reports" page to see:
 
 If you need to clear all expenses and settlements (keeps users intact):
 
-1. Navigate to the settings/database page
-2. Enter the `DB_RESET_PIN` configured in your `.env` file
-3. Confirm the reset
+1. Hit a `POST` request at `/api/db/clear?pin=DB_RESET_PIN` (Replace `DB_RESET_PIN` with the one configured in your environment variables).
 
 ## 🎯 Configuration
 
@@ -208,6 +206,7 @@ This app is designed to be self-hosted. You can deploy it to:
 - **Railway** / **Render** / **Fly.io**
 - **Docker** container on your own server
 - Any Node.js hosting platform
+- Or even better, host it on your local network.
 
 ### Production Build
 
@@ -243,4 +242,3 @@ This is a personal project built for roommate use. Feel free to fork and customi
 - Regularly review balances and settle up
 - Use descriptive titles and notes for expenses
 - Back up your database periodically
-
